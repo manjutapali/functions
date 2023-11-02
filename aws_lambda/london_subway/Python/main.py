@@ -1,7 +1,7 @@
 import json
 import requests
 
-def lambda_handler(req):
+def main(req):
     result = requests.get('https://api.tfl.gov.uk/line/mode/tube/status',headers={"content-type":"application/json", "charset":"utf-8"})
 
 
