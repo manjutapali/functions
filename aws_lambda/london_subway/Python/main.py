@@ -1,9 +1,9 @@
 import json
 import requests
 
-def main(req):
+def req_handler(req):
+    print("Fetching the response...")
     result = requests.get('https://api.tfl.gov.uk/line/mode/tube/status',headers={"content-type":"application/json", "charset":"utf-8"})
-
 
     since_id = None
     timeline = json.loads(result.text)
