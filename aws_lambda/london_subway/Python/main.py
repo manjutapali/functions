@@ -3,7 +3,7 @@ import requests
 
 def main(req):
     print("Fetching the response...")
-    print "wrong format"
+    
     result = requests.get('https://api.tfl.gov.uk/line/mode/tube/status',headers={"content-type":"application/json", "charset":"utf-8"})
 
     since_id = None
